@@ -50,6 +50,37 @@ class SLL {
     }
 }
 
+contains(value){
+    var runner = this.head
+    while(runner.val == value){
+        if(runner.val == value){
+            return true
+        }
+    }
+    return false
+}
+
+length(){
+    var runner = this.head
+    var count = 0
+    while(runner != null){
+        count++
+        runner = runner.next
+    }
+    return count
+}
+
+display (){
+    var runner = this.head
+    var str = ''
+    while(runner !=){
+        str += runner.val + " "
+        runner = runner.next    }
+        
+        return str;
+}
+
+
 var myNode1 = new Node("Reptar")
 var myNode2 = new Node("Angelica")
 var myNode3 = new Node("Tommy")
